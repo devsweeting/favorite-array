@@ -7,8 +7,11 @@ $(document).ready(function() {
     var userInput = [food, movie, game, team];
 
     var newArray = [userInput[1], userInput[0], userInput[2]];
-    console.log(userInput, newArray);
-    console.log(newArray);
+
+    $("#favorite-list").append("<li>" + newArray[0] + "</li>");
+    $("#favorite-list").append("<li>" + newArray[1] + "</li>");
+    $("#favorite-list").append("<li>" + newArray[2] + "</li>");
+    
     event.preventDefault();
   });
 });
