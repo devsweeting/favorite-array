@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     var newArray = [userInput[1], userInput[0], userInput[2]];
 
+    $("#favorite-list").empty();
     $("#favorite-list").append("<li>" + newArray[0] + "</li>");
     $("#favorite-list").append("<li>" + newArray[1] + "</li>");
     $("#favorite-list").append("<li>" + newArray[2] + "</li>");
