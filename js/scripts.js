@@ -11,7 +11,14 @@ $(document).ready(function() {
     $("#favorite-list").append("<li>" + newArray[0] + "</li>");
     $("#favorite-list").append("<li>" + newArray[1] + "</li>");
     $("#favorite-list").append("<li>" + newArray[2] + "</li>");
-    
     event.preventDefault();
+  });
+
+  $("#iceCream").click(function(){
+    var iceCreams = ["vanilla", "chocolate", "rocky road", "cookie dough", "moose tracks", "neopolitan"];
+
+    iceCreams.forEach(function(iceCream) {
+      $("#loopingList").append("<li>" + iceCream.toUpperCase() + "</li>");
+    });
   });
 });
